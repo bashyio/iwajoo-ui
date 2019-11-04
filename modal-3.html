@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="fonts-loaded">
+<!--#else -->
+<html lang="en">
+<!--#endif -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Iwajoo - Search and Explore</title>
+  <meta name="description" content="Find businesses, professionals, technicians, freelancers and more around you"/>
+  <meta name="robots" content="noodp,noydir" />
+  <meta name="referrer" content="origin-when-crossorigin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.png" />
+  <link href="css/style.css" rel="stylesheet">
+  <!-- <link href="css/img-nogrid.css" rel="stylesheet"> -->
+  <link href="css/img.css" rel="stylesheet">
+	<noscript>
+	<style type="text/css">
+	@import 'css/nojs.css';
+	</style>
+</noscript>
+</head>
+<body class="homesearch modal-open">
+	<div class="hold-all">
+		<div class="tnav">
+			<div class="tnav-inner">
+				<div class="container cmenu">
+					<div class="logo">
+						<a href="#"></a>
+					</div>
+					<div class="tnav-group">
+					<div class="navsearch-group">
+						<div class="navsearch-form-group">
+							<form>
+								 <input class="search-gp-text" autocomplete="off" name="email" id="email" type="form" placeholder="Search nearby..." value="" />
+								 <div class="search-button-hold">
+								 <button class="search-gp-button" id="sbutton" type="submit" value=""><span class="search-gp-button-icon icon-search-s-24"></span></button>
+								 </div>
+							</form>
+						</div>
+					</div>
+					<div class="global-link-group">
+						<ul class="global-links">
+							<li class="home gl-active">
+								<a href="index.html">
+									<span class="link-icon icon-home-s-24"></span>
+									<span class="link-text">Home</span>
+								</a>
+							</li>
+							<li class="timeline active">
+							<span class="global-new"></span>
+								<a href="timeline.html">
+									<span class="link-icon icon-timeline-s-24"></span>
+									<span class="link-text">Timeline</span>
+								</a>
+							</li>
+							<li class="needs active">
+							<span class="global-new"></span>
+								<a href="needs.html">
+									<span class="link-icon icon-needs-s-24"></span>
+									<span class="link-text">Needs</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="notset-link-group">
+						<ul class="notset-links">
+							<li class="message active">
+								<a href="messages.html">
+									<span class="ns-link-icon icon-message-s-24"></span>
+									<span class="notcount newnot">1000+</span>
+								</a>
+							</li>
+							<li class="notification active">
+								<a href="notifications.html">
+									<span class="ns-link-icon icon-notification-s-24"></span>
+									<span class="notcount newnot">1000+</span>
+								</a>
+							</li>
+							<li class="profile dropdown open d-right">
+								<a href="profile.html">
+									<span class="ns-link-icon profile-img"></span>
+								</a>
+								<ul class="dropdown-menu" id="user_tools">
+								<li><a href="#">View Profile</a></li>
+								<li><a href="#">Settings</a></li>
+								<li class="dm-break"></li>
+								<li><a href="#">Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-div-mobile">
+			<a href="index.html"  class="nm-active">
+				<span class="i-link-hold">
+					<span class="link-icon-mobile icon-home-w-s-24"></span>
+				</span>
+			</a>
+			<a href="timeline.html" class="active">
+				<span class="i-link-hold">
+					<span class="global-mobile-new"></span>
+					<span class="link-icon-mobile icon-timeline-w-s-24"></span>
+				</span>
+			</a>
+			<a href="needs.html" class="active">
+				<span class="i-link-hold">
+					<span class="global-mobile-new"></span>
+					<span class="link-icon-mobile icon-needs-w-s-24"></span>
+				</span>
+			</a>
+			<a href="messages.html" class="active">
+				<span class="i-link-hold">
+					<span class="notcount-mobile newnot">100+</span>
+					<span class="link-icon-mobile icon-message-w-s-24"></span>
+				</span>
+			</a>
+			<a href="notifications.html" class="active">
+				<span class="i-link-hold">
+				<span class="notcount-mobile newnot">1</span>
+					<span class="link-icon-mobile icon-notification-w-s-24"></span>
+				</span>
+			</a>
+			<a href="profile.html">
+			<span class="i-link-hold">
+				<span class="link-icon-mobile  profile-img"></span>
+			</span>
+			</a>
+		</div>
+		<div class="main outer">
+		<!-- <div class="main outerexploreactive"> -->
+				<div class="container middle">
+					<div class="inner">
+						<h1 class="findtext">Find businesses, professionals, freelancers and more!</h1>
+						<p class="extraftext">We save you the hassle. Connect with the best people and places around.</p>
+						<form>
+						<div class="searchform">
+							<div class="col-50 sform-divide">
+								<div class="sform-keywordgroup">
+									<span class="sform-label">
+									NAME/TAG(S)
+									</span>
+									<input type="text" class="sform-input" placeholder="e.g: XYZ Restaurant or #Hotel #Plumber" />
+								</div>
+							</div>
+						<div class="col-50">
+							<div class="sform-lb-group">
+								<div class="sform-locationgroup">
+									<div class="sform-location">
+										<span class="sform-label">
+										LOCATION
+										</span>
+									</div>
+									<input type="text" class="sform-input" placeholder="e.g: Ikeja, Lagos"/>
+								</div>
+								<div class="input-group-button">
+									<button type="submit">
+									<span class="search-button-text">Search </span> <span class="search-button-icon icon-search-w-s-18"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+						</div>
+						<a href="#" class="afterslink"><span class="hml2">Increase your income. </span>Help people find you faster. Enlist!</a>
+						</form>
+				</div>
+				<div class="arrowexplore bounce"><a href="#"><span class="ae-text">Explore!</span><span class="ae-icon"><span class="ae-icon-inner icon-dropdown-th-w-s-22"></span></span></a> </div>
+			</div>
+		</div>
+		<div class="main notop defaultbg">
+			<div class="container">
+				<div class="col-100 divhold center">
+					<div class="dh-inner">
+						<section>
+							<div class="section-inner">
+								<span class="major-title"><b>'#Restaurant'</b> in <b>Lagos, Nigeria</b></span>
+								<div class="centered-menu">
+									<ul>
+										<li><a href="#" class="active"><span class="button-text hm">Best Match</span> <span class="button-icon icon-fbmatch-s-20"></span></a></li>
+										<li><a href="#"><span class="button-text hm">Recommendations</span> <span class="button-icon icon-frecom-s-20"></span></a></li>
+										<li><a href="#"><span class="button-text hm">Review Ratings</span> <span class="button-icon icon-star-s-20"></span></a></li>
+										<li><a href="#"><span class="button-text hm">Distance</span> <span class="button-icon icon-location-s-20"></span></a></li>
+									</ul>
+								</div>
+								<fbold>Page 1 of 100</fbold>
+							</div>
+						</section>
+						
+					</div>
+				</div>
+				<div class="col-30 rightm divhold">
+					<div class="dh-inner">
+						<section class="boxed toggle-sec">
+							<div class="section-header">
+								<caret></caret>
+								<div class="section-inner">
+								Map
+								</div>
+							</div>
+							<div class="section-content">
+								<div class="map-img-hold">
+									<img src="img/map-demo.jpg" title="Map" alt="Map" />
+								</div>
+								<!--
+								<div class="section-inner">
+								</div>
+								-->
+							</div>
+						</section>
+						<section class="boxed toggle-sec">
+							<div class="section-header">
+								<caret></caret>
+								<div class="section-inner">
+								More Filters
+								</div>
+							</div>
+							<div class="section-content">
+								<div class="section-inner">
+									<div class="sf-group mgfirst">
+									<span class="sf-group-header">Price</span>
+									<div class="sf-group-content">
+										<label class="sf-group-label inline-block"><input type="checkbox"><span><img alt="" title="" src="img/icons/coin-4 icon.png" id="" /></span></label>
+										<label class="sf-group-label inline-block"><input type="checkbox"><span><img alt="" title="" src="img/icons/coin-3 icon.png" id="" /></span></label>
+										<label class="sf-group-label inline-block"><input type="checkbox"><span><img alt="" title="" src="img/icons/coin-2 icon.png" id="" /></span></label>
+										<label class="sf-group-label inline-block"><input type="checkbox"><span><img alt="" title="" src="img/icons/coin-1 icon.png" id="" /></span></label>
+									</div>
+									</div>
+									<div class="sf-group">
+									<div class="sf-group-content">
+										<label class="sf-group-label block"><input type="checkbox"><span>From your circle</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>Reviewed</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>Recommended</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>New</span></label>
+									</div>
+									</div>
+									<div class="sf-group">
+									<span class="sf-group-header">Location Type</span>
+									<div class="sf-group-content">
+										<label class="sf-group-label block"><input type="checkbox"><span>Business Location</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>Mobile Business</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>Run from Home</span></label>
+									</div>
+									</div>
+									<div class="sf-group">
+									<span class="sf-group-header">Features</span>
+									<div class="sf-group-content">
+										<label class="sf-group-label block"><input type="checkbox"><span>Open Now</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>Running a Deal</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>Request a Quote</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>Free Wifi</span></label>
+										<span class="sfe-more"><a href="#" id="sfe-fea-more">More...</a></span>
+										<!-- <div class="sf-group-extra show" id="sfe-fea-div"> -->
+										<div class="sf-group-extra" id="sfe-fea-div">
+										<label class="sf-group-label block"><input type="checkbox"><span>More Options</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>More Options</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>More Options</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>More Options</span></label>
+										</div>
+									</div>
+									</div>
+									<div class="sf-group">
+									<span class="sf-group-header">Related Tags</span>
+									<div class="sf-group-content">
+										<label class="sf-group-label block"><input type="checkbox"><span>#Tagname</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>#Tagname</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>#Tagname</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>#Tagname</span></label>
+										<span class="sfe-more"><a href="#" id="sfe-fea-more">More...</a></span>
+										<!-- <div class="sf-group-extra show" id="sfe-fea-div"> -->
+										<div class="sf-group-extra" id="sfe-ret-div">
+										<label class="sf-group-label block"><input type="checkbox"><span>#Tagname</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>#Tagname</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>#Tagname</span></label>
+										<label class="sf-group-label block"><input type="checkbox"><span>#Tagname</span></label>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-70 divhold">
+					<div class="dh-inner">
+						<section class="boxed ba-result-div" id="sresult-1">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account2.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#1</span>
+													<span class="ba-name"><a class="slink" href="#">Sheraton Indian Restaurant</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">1M</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">2000 <span class="hm4">reviews </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span></a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">19b Idejo, Victoria Island,<br/>Lagos 101241, Nigeria.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 903 948 6340.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Restaurant</a>, <a href="#food">#Food</a>, <a href="#asian">#Asian</a>, <a href="#seafood">#Seafood</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">Always an easy choice for a great dinner!</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">Great evening out. Excellent curries and a good variety.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-2">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#2</span>
+													<span class="ba-name"><a class="slink" href="#">Young's Alterations</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">400</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">2 <span class="hm4">reviews </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span></a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">Ikeja, Lagos.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 803 938 6165.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Tailor</a>, <a href="#food">#MensWear</a>, <a href="#asian">#FashionDesign</a>, <a href="#seafood">#SuitAndTie</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">The best tailoring experience I have ever experienced.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">I've had several tailoring and hemming done here and each time was pure perfection.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-3">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account2.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#3</span>
+													<span class="ba-name"><a class="slink" href="#">Sheraton Indian Restaurant</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">20K <span class="hm4">reviews </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span>&nbsp;</a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">19b Idejo, Victoria Island,<br/>Lagos 101241, Nigeria.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 903 948 6340.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Restaurant</a>, <a href="#food">#Food</a>, <a href="#asian">#Asian</a>, <a href="#seafood">#Seafood</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">Always an easy choice for a great dinner!</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">Great evening out. Excellent curries and a good variety.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-4">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#4</span>
+													<span class="ba-name"><a class="slink" href="#">Young's Alterations</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">400</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">7 <span class="hm4">reviews </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span></a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">Ikeja, Lagos.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 803 938 6165.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Tailor</a>, <a href="#food">#MensWear</a>, <a href="#asian">#FashionDesign</a>, <a href="#seafood">#SuitAndTie</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">The best tailoring experience I have ever experienced.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">I've had several tailoring and hemming done here and each time was pure perfection.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-5">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#5</span>
+													<span class="ba-name"><a class="slink" href="#">Young's Alterations</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">250</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">250 <span class="hm4">reviews </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span></a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">Ikeja, Lagos.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 803 938 6165.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Tailor</a>, <a href="#food">#MensWear</a>, <a href="#asian">#FashionDesign</a>, <a href="#seafood">#SuitAndTie</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">The best tailoring experience I have ever experienced.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">I've had several tailoring and hemming done here and each time was pure perfection.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-6">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#6</span>
+													<span class="ba-name"><a class="slink" href="#">Young's Alterations</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">400</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">1 <span class="hm4">review </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span></a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">Ikeja, Lagos.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 803 938 6165.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Tailor</a>, <a href="#food">#MensWear</a>, <a href="#asian">#FashionDesign</a>, <a href="#seafood">#SuitAndTie</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">The best tailoring experience I have ever experienced.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">I've had several tailoring and hemming done here and each time was pure perfection.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-7">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#7</span>
+													<span class="ba-name"><a class="slink" href="#">Young's Alterations</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">2.3K</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">308 <span class="hm4">reviews </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span></a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">Ikeja, Lagos.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 803 938 6165.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Tailor</a>, <a href="#food">#MensWear</a>, <a href="#asian">#FashionDesign</a>, <a href="#seafood">#SuitAndTie</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">The best tailoring experience I have ever experienced.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">I've had several tailoring and hemming done here and each time was pure perfection.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-8">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#8</span>
+													<span class="ba-name"><a class="slink" href="#">Young's Alterations</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">15</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">2 <span class="hm4">reviews </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> 
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">Ikeja, Lagos.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 803 938 6165.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Tailor</a>, <a href="#food">#MensWear</a>, <a href="#asian">#FashionDesign</a>, <a href="#seafood">#SuitAndTie</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">The best tailoring experience I have ever experienced.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">I've had several tailoring and hemming done here and each time was pure perfection.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-9">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#9</span>
+													<span class="ba-name"><a class="slink" href="#">Young's Alterations</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">404</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">15 <span class="hm4">reviews </span></span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span></a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">Ikeja, Lagos.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 803 938 6165.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Tailor</a>, <a href="#food">#MensWear</a>, <a href="#asian">#FashionDesign</a>, <a href="#seafood">#SuitAndTie</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">The best tailoring experience I have ever experienced.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">I've had several tailoring and hemming done here and each time was pure perfection.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed ba-result-div" id="sresult-10">
+							<div class="section-inner  ba-result-div-inner">
+									<div class="ba-result-holder">
+										<div class="bar-profile">
+										<a class="bar-pic" href="#">
+											<img alt="" title="" src="img/demo account.jpg" />
+										</a>
+										</div>
+										<div class="col-100 bar-content">
+											<div class="bar-content-inner">
+												<div class="col-100 pcorner">
+													<span class="pcorner-content">#10</span>
+													<span class="ba-name"><a class="slink" href="#">Young's Alterations</a></span>
+													<span class="icon-group-large rbg"><span class="rc-large-icon icon-recommend-b-s-21"></span><span class="rc-large-text">102</span></span> <span class="ratings-large"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text">2000 <span class="hm4">reviews </span></span></span> <span class="img-icon-large"><img alt="" title="" src="img/icons/coin-1 icon.png" /></span> <a href="#" class="icon-group-large"><span class="rc-large-icon icon-place-s-16"></span></a>
+												</div>
+													<div class="col-50 res-special">
+														<div class="res-special-inner">
+														<div class="text-group">
+														<span class="group-icon  icon-location-s-16"></span>
+														<span class="group-text">Ikeja, Lagos.</span>
+														</div>
+														<div class="text-group hm4">
+														<span class="group-icon  icon-phone-s-16"></span>
+														<span class="group-text">234 803 938 6165.</span>
+														</div>
+														<span class="ba-tag-set hm4"><a href="#restaurant">#Tailor</a>, <a href="#food">#MensWear</a>, <a href="#asian">#FashionDesign</a>, <a href="#seafood">#SuitAndTie</a></span>
+														</div>
+												</div>
+												<div class="col-50 res-special hm">
+													<div class="res-special-inner">
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your daddy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">The best tailoring experience I have ever experienced.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+														<div class="mini-review-set">
+															<a href="#profile"><div class="mr-picture"><img alt="" title="" src="img/your mummy.jpg" /></div></a>
+															<a href="#" class="slink">
+																<div class="mr-content">
+																	<span class="mr-title">I've had several tailoring and hemming done here and each time was pure perfection.</span>
+																	<span class="mr-date">09/11/2016</span>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</section>
+						<section class="boxed">
+							<div class="section-inner">
+								<div class="sr-nav">
+									<ul>
+										<!-- <li class="hide"><a href="#"><span class="button-text">&lt; Previous</span></a></li> -->
+										<li><a href="#"><span class="button-text">&lt; Previous</span></a></li>
+										<li class="hm3"><a href="#" class="active"><span class="button-text">1</span></a></li>
+										<li class="hm3"><a href="#"><span class="button-text">2</span></a></li>
+										<li class="hm3"><a href="#"><span class="button-text">3</span></a></li>
+										<li class="hm3"><a href="#"><span class="button-text">4</span></a></li>
+										<li class="hm3"><a href="#"><span class="button-text">5</span></a></li>
+										<li class="hm3"><a href="#"><span class="button-text">6</span></a></li>
+										<li class="hm3"><a href="#"><span class="button-text">7</span></a></li>
+										<li class="hm3"><a href="#"><span class="button-text">8</span></a></li>
+										<li><a href="#"><span class="button-text">Next &gt; </span></a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-30 rightm divhold">
+					<div class="dh-inner">
+						<section class="boxed">
+							<div class="section-content">
+								<div class="section-inner">
+									<p>Can't find what you're looking for? <b>Add it!</b>
+									<a class="link-button-group button-bg-group button-bg"><span class="link-group-icon icon-list-w-s-20"></span> List a business</a>
+									</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main notop defaultbg">
+			<div class="container">
+				<div class="col-100 divhold center">
+					<div class="dh-inner">
+						<section>
+							<div class="section-inner">
+								<span class="major-title">Explore <a href="#" title="Click to change location"><b>Lagos, Nigeria</b></a></span>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-100 m-10">
+					<div class="dh-inner">
+						<div class="col-nm-50">
+							<section>
+								<span class="off-title">Popular</span>
+							</section>
+						</div>
+						<div class="col-nm-50 text-right">
+							<section>
+								<span class="off-title"><a href="#">More...</a></span>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1001" id="popular-1">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1001 .mini-acc-header-inner{background: none; background: rgba(101, 200, 122, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C65C87A,endColorstr=#4C65C87A);}
+						.userstyle-mac-1001 .mini-acc-header{background-color:#65C87A; background-image: url('img/header-sample-3.jpg');}
+						.userstyle-mac-1001 a .ba-tag-set{color:#65C87A;}
+						.userstyle-mac-1001 .follow-button{background-color:#65C87A;}
+						.userstyle-mac-1001 .follow-button-a, .userstyle-mac-1001 .follow-button:hover, .userstyle-mac-1001 .follow-button:focus, .userstyle-mac-1022 .follow-button:active{background-color:#32643D; !important}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account2.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Unfollow" class="follow-button-a"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Sheraton Indian Restaurant
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-5-star-s-15"></span><span class="ratings-medium-text">2000 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Restaurant, #Food, #Asian, #Seafood</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1023" id="popular-2">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1023 .mini-acc-header-inner{background: none; background: rgba(142, 68, 173, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C8E44AD,endColorstr=#4C8E44AD);}
+						.userstyle-mac-1023 .mini-acc-header{background-color:#8E44AD;}
+						.userstyle-mac-1023 a .ba-tag-set{color:#8E44AD;}
+						.userstyle-mac-1023 .follow-button{background-color:#8E44AD;}
+						.userstyle-mac-1023 .follow-button-a, .userstyle-mac-1023 .follow-button:hover, .userstyle-mac-1023 .follow-button:focus, .userstyle-mac-1023 .follow-button:active{background-color:#472256;}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Unfollow" class="follow-button-a"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Young's Alterations
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-5-star-s-15"></span><span class="ratings-medium-text">18 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Tailor #MensWear #FashionDesign #SuitAndTie</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1024 hm5" id="popular-3">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1024 .mini-acc-header-inner{background: none; background: rgba(236, 85, 100, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4CEC5564,endColorstr=#4CEC5564);}
+						.userstyle-mac-1024 .mini-acc-header{background-color:#EC5564; background-image: url('img/header-sample.jpg');}
+						.userstyle-mac-1024 a .ba-tag-set{color:#EC5564;}
+						.userstyle-mac-1024 .follow-button{background-color:#EC5564;}
+						.userstyle-mac-1024 .follow-button-a, .userstyle-mac-1024 .follow-button:hover, .userstyle-mac-1024 .follow-button:focus, .userstyle-mac-1024 .follow-button:active{background-color:#762A32;}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account2.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Olive Tree Restaurants
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-2-star-s-15"></span><span class="ratings-medium-text">64 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Restaurant, #Food, #Asian, #Seafood</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+			<div class="col-spec-25 divhold userstyle-mac-1025 hm5" id="popular-4">
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Tony Casuals
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-1-star-s-15"></span><span class="ratings-medium-text">45 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Tailor #MensWear #FashionDesign #SuitAndTie</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+			<div class="col-100 m-10">
+					<div class="dh-inner">
+						<div class="col-nm-50">
+							<section>
+								<span class="off-title">New</span>
+							</section>
+						</div>
+						<div class="col-nm-50 text-right">
+							<section>
+								<span class="off-title"><a href="#">More...</a></span>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1025" id="new-1">
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Tony Casuals
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-5-star-s-15"></span><span class="ratings-medium-text">45 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Tailor #MensWear #FashionDesign #SuitAndTie</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1024" id="new-2">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1024 .mini-acc-header-inner{background: none; background: rgba(236, 85, 100, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4CEC5564,endColorstr=#4CEC5564);}
+						.userstyle-mac-1024 .mini-acc-header{background-color:#EC5564; background-image: url('img/header-sample.jpg');}
+						.userstyle-mac-1024 a .ba-tag-set{color:#EC5564;}
+						.userstyle-mac-1024 .follow-button{background-color:#EC5564;}
+						.userstyle-mac-1024 .follow-button-a, .userstyle-mac-1024 .follow-button:hover, .userstyle-mac-1024 .follow-button:focus, .userstyle-mac-1024 .follow-button:active{background-color:#762A32;}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account2.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Olive Tree Restaurants
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-5-star-s-15"></span><span class="ratings-medium-text">64 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Restaurant, #Food, #Asian, #Seafood</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1022 hm5" id="new-3">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1022 .mini-acc-header-inner{background: none; background: rgba(101, 200, 122, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C65C87A,endColorstr=#4C65C87A);}
+						.userstyle-mac-1022 .mini-acc-header{background-color:#65C87A; background-image: url('img/header-sample-3.jpg');}
+						.userstyle-mac-1022 a .ba-tag-set{color:#65C87A;}
+						.userstyle-mac-1022 .follow-button{background-color:#65C87A;}
+						.userstyle-mac-1022 .follow-button-a, .userstyle-mac-1022 .follow-button:hover, .userstyle-mac-1022 .follow-button:focus, .userstyle-mac-1022 .follow-button:active{background-color:#32643D;}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account2.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Sheraton Indian Restaurant
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-5-star-s-15"></span><span class="ratings-medium-text">33 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Restaurant, #Food, #Asian, #Seafood</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1023 hm5" id="new-4">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1023 .mini-acc-header-inner{background: none; background: rgba(142, 68, 173, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C8E44AD,endColorstr=#4C8E44AD);}
+						.userstyle-mac-1023 .mini-acc-header{background-color:#8E44AD;}
+						.userstyle-mac-1023 a .ba-tag-set{color:#8E44AD;}
+						.userstyle-mac-1023 .follow-button{background-color:#8E44AD;}
+						.userstyle-mac-1023 .follow-button-a, .userstyle-mac-1023 .follow-button:hover, .userstyle-mac-1023 .follow-button:focus, .userstyle-mac-1023 .follow-button:active{background-color:#472256;}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Young's Alterations
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-3-star-s-15"></span><span class="ratings-medium-text">18 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Tailor #MensWear #FashionDesign #SuitAndTie</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-100 m-10">
+					<div class="dh-inner">
+						<div class="col-nm-50">
+							<section>
+								<span class="off-title">Recommended</span>
+							</section>
+						</div>
+						<div class="col-nm-50 text-right">
+							<section>
+								<span class="off-title"><a href="#">More...</a></span>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1029" id="recommended-4">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1029 .mini-acc-header-inner{background: none; background: rgba(142, 68, 173, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C8E44AD,endColorstr=#4C8E44AD);}
+						.userstyle-mac-1029 .mini-acc-header{background-color:#8E44AD; background-image: url('img/header-sample-2.jpg');}
+						.userstyle-mac-1029 a .ba-tag-set{color:#8E44AD;}
+						.userstyle-mac-1029 .follow-button{background-color:#8E44AD;}
+						.userstyle-mac-1029 .follow-button-a, .userstyle-mac-1029 .follow-button:hover, .userstyle-mac-1029 .follow-button:focus, .userstyle-mac-1029 .follow-button:active{background-color:#472256;}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Young's Alterations
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-4-star-s-15"></span><span class="ratings-medium-text">18 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Tailor #MensWear #FashionDesign #SuitAndTie</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1024" id="recommended-2">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1024 .mini-acc-header-inner{background: none; background: rgba(236, 85, 100, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4CEC5564,endColorstr=#4CEC5564);}
+						.userstyle-mac-1024 .mini-acc-header{background-color:#EC5564; background-image: url('img/header-sample.jpg');}
+						.userstyle-mac-1024 a .ba-tag-set{color:#EC5564;}
+						.userstyle-mac-1024 .follow-button{background-color:#EC5564;}
+						.userstyle-mac-1029 .follow-button-a, .userstyle-mac-1029 .follow-button:hover, .userstyle-mac-1029 .follow-button:focus, .userstyle-mac-1029 .follow-button:active{background-color:#762A32;}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account2.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Olive Tree Restaurants
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-1-star-s-15"></span><span class="ratings-medium-text">64 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Restaurant, #Food, #Asian, #Seafood</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1028 hm5" id="recommended-1">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1028 .mini-acc-header{background-image: url('img/header-sample-3.jpg');}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Unfollow" class="follow-button-a"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Tony Casuals
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-3-star-s-15"></span><span class="ratings-medium-text">12 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Tailor #MensWear #FashionDesign #SuitAndTie</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold userstyle-mac-1022 hm5" id="recommended-3">
+					<style>
+					/* custom style for user */
+						.userstyle-mac-1022 .mini-acc-header-inner{background: none; background: rgba(101, 200, 122, 0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C65C87A,endColorstr=#4C65C87A);}
+						.userstyle-mac-1022 .mini-acc-header{background-color:#65C87A; background-image: url('img/header-sample-3.jpg');}
+						.userstyle-mac-1022 a .ba-tag-set{color:#65C87A;}
+						.userstyle-mac-1022 .follow-button{background-color:#65C87A;}
+						.userstyle-mac-1022 .follow-button:hover{background-color:#32643D;}
+					</style>
+					<div class="dh-inner">
+					<section class="boxed mini-acc-div">
+						<a href="#2">
+							<div class="mini-acc-header">
+								<div class="mini-acc-header-inner">
+									<div class="mac-pic">
+											<img alt="" title="" src="img/demo account2.jpg">
+									</div>
+									<form class="mac-follow" action=""><button type="submit" value="" title="Follow" class="follow-button"><span class="flw-icon-15"></span></button></form>
+								</div>
+							</div>
+							<div class="section-inner  mini-acc-div-inner">
+									<div class="mini-acc-holder">
+										<div class="col-100 mac-profile">
+										<span class="mac-title slink2">
+											Sheraton Indian Restaurant
+										</span>
+										<div class="mac-content">
+										<div class="mac-icon-set"><span class="icon-group-medium2 rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span> <span class="icon-group-medium2"><span class="rc-medium2-icon icon-place-s-14"></span><span class="rc-medium2-text noicon"></span></span> <span class="img-icon-medium2"><img alt="" title="" src="img/icons/coin-1 icon.png"></span></div>
+										<block><span class="ratings-medium2"><span class="ratings-medium-icon icon-3-star-s-15"></span><span class="ratings-medium-text">2000 <span class="hm4">reviews </span></span></span> </block>
+										<span class="ba-tag-set">#Restaurant, #Food, #Asian, #Seafood</span>
+										</div>
+										</div>
+									</div>
+							</div>
+						</a>
+					</section>
+					</div>
+				</div>
+				<div class="col-100 m-10">
+					<div class="dh-inner">
+						<div class="col-nm-50">
+							<section>
+								<span class="off-title">Deals</span>
+							</section>
+						</div>
+						<div class="col-nm-50 text-right">
+							<section>
+								<span class="off-title"><a href="#">More...</a></span>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold" id="deal-1">
+					<div class="dh-inner">
+						<section class="boxed deal-acc-div">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="deal-inner">
+								<div class="deal-acc-header">
+										<div class="deal-pic">
+												<a class="slink" href="#"><img alt="" title="" src="img/demo account.jpg"></a>
+										</div>
+										<div class="deal-acc-details">
+											<span class="deal-acc-title">
+												<a class="slink" href="#">Young's Alterations</a>
+											</span>
+											<span class="deal-acc-icons">
+											<span class="icon-group-medium2 left rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">215</span></span>
+											<span class="ratings-medium2-main"><span class="ratings-medium-icon icon-5-star-s-15"></span><span class="ratings-medium-text">16</span></span>
+											</span>
+										</div>
+								</div>
+								<a class="slink deal-hold" href="#">
+									<div class="deal-img">
+										<div class="deal-img-inner">
+											<div class="deal-img-holder">
+												<div class="deal-img-holder-inner">
+												<img alt="" title="" src="img/demo deal1.jpg">
+												<!-- <img alt="" title="" src="img/icons/coin-1 icon.png" /> -->
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="deal-content">
+										<span class="deal-content-title">
+											Deal Title Here Deal Title Here
+										</span>
+										<span class="deal-content-details">
+											All details about deal will appear here.
+										</span>
+									<span class="more-dot">. . .</span>
+									</div>
+								</a>
+								</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold" id="deal-2">
+					<div class="dh-inner">
+						<section class="boxed deal-acc-div">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="deal-inner">
+								<div class="deal-acc-header">
+										<div class="deal-pic">
+												<a class="slink" href="#"><img alt="" title="" src="img/demo account2.jpg"></a>
+										</div>
+										<div class="deal-acc-details">
+											<span class="deal-acc-title">
+												<a class="slink" href="#">Olive Tree Restaurants</a>
+											</span>
+											<span class="deal-acc-icons">
+											<span class="icon-group-medium2 blockmini left rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">148</span></span>
+											<span class="ratings-medium2-main"><span class="ratings-medium-icon icon-4-star-s-15"></span><span class="ratings-medium-text">123</span></span>
+											</span>
+										</div>
+								</div>
+								<a class="slink deal-hold deal-no-img" href="#">
+									<div class="deal-content">
+										<span class="deal-content-title">
+											Deal Title Here
+										</span>
+										<span class="deal-content-details">
+											All details about deal will appear here.
+										</span>
+										<span class="more-dot">. . .</span>
+									</div>
+								</a>
+								</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold hm5" id="deal-3">
+					<div class="dh-inner">
+						<section class="boxed deal-acc-div">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="deal-inner">
+								<div class="deal-acc-header">
+										<div class="deal-pic">
+												<a class="slink" href="#"><img alt="" title="" src="img/demo account.jpg"></a>
+										</div>
+										<div class="deal-acc-details">
+											<span class="deal-acc-title">
+												<a class="slink" href="#">Tony Casuals</a>
+											</span>
+											<span class="deal-acc-icons">
+											<span class="icon-group-medium2 blockmini left rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">400</span></span>
+											<span class="ratings-medium2-main"><span class="ratings-medium-icon icon-2-star-s-15"></span><span class="ratings-medium-text">33</span></span>
+											</span>
+										</div>
+								</div>
+								<a class="slink deal-hold" href="#">
+									<div class="deal-img">
+										<div class="deal-img-inner">
+											<div class="deal-img-holder">
+												<div class="deal-img-holder-inner">
+												<img alt="" title="" src="img/demo deal2.jpg">
+												<!-- <img alt="" title="" src="img/icons/coin-1 icon.png" /> -->
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="deal-content">
+										<span class="deal-content-title">
+											Deal Title Here
+										</span>
+										<span class="deal-content-details">
+											All details about deal will appear here.
+										</span>
+										<span class="more-dot">. . .</span>
+									</div>
+								</a>
+								</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-spec-25 divhold hm5" id="deal-4">
+					<div class="dh-inner">
+						<section class="boxed deal-acc-div">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="deal-inner">
+								<div class="deal-acc-header">
+										<div class="deal-pic">
+												<a class="slink" href="#"><img alt="" title="" src="img/demo account2.jpg"></a>
+										</div>
+										<div class="deal-acc-details">
+											<span class="deal-acc-title">
+												<a class="slink" href="#">Sheraton Indian Restaurant</a>
+											</span>
+											<span class="deal-acc-icons">
+											<span class="icon-group-medium2 blockmini left rbg"><span class="rc-medium2-icon icon-recommend-b-s-19"></span><span class="rc-medium2-text">88</span></span>
+											<span class="ratings-medium2-main"><span class="ratings-medium-icon icon-5-star-s-15"></span><span class="ratings-medium-text">116</span></span>
+											</span>
+										</div>
+								</div>
+								<a class="slink deal-hold" href="#">
+									<div class="deal-img">
+										<div class="deal-img-inner">
+											<div class="deal-img-holder">
+												<div class="deal-img-holder-inner">
+												<img alt="" title="" src="img/demo deal3.jpg">
+												<!-- <img alt="" title="" src="img/icons/coin-1 icon.png" /> -->
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="deal-content">
+										<span class="deal-content-title">
+											Deal Title Here
+										</span>
+										<span class="deal-content-details">
+											All details about deal will appear here.
+										</span>
+										<span class="more-dot">. . .</span>
+									</div>
+								</a>
+								</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-100 m-10">
+					<div class="dh-inner">
+						<div class="col-nm-50">
+							<section>
+								<span class="off-title">Recent</span>
+							</section>
+						</div>
+						<div class="col-nm-50 text-right">
+							<section>
+								<span class="off-title"><a href="#">More...</a></span>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="col-50 divhold">
+						<section class="boxed post-div" id="post-1">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+								<div class="post-acc-pic">
+									<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+								</div>
+								<div class="post-content">
+									<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+									<div class="post-title"><a class="slink mt" href="#">Adekunle Gold</a> reviewed <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+									<div class="post-content-main">
+										<span class="ratings-large pcr"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text hm5">12/09/99</span></span>
+										<div class="post-text">
+											<div class="post-text-inner">
+											I loves Paris Baguette! All the types of savory and sweet pastry beds that i long for. Some people think some of them were hard and cold.. well.. if its been sitting for even 15 minutes.. thats likely. Why not ask them to heat it up for you for 3-6 seconds. Just like a krispy creme donut. Do yourself a favor.. and try the CRONUT! Its a party for your tastebuds! Perfect amount of crisp. Just the right amount of bounce you want in bread. Sweet and tangy. Mmmm craving this again already!!
+											</div>
+											<a href="#" id="more-post-1"><span class="post-more"><span class="post-more-inner icon-dropdown-t-s-20"></span></span></a>
+										</div>
+										<div class="icon-response-s-22s">
+											<span class="post-response response-like"><a href="#"  class="icon-response-s-22-a"></a><span class="response-text">999.9K</span></span>
+											<span class="post-response response-funny"><a href="#" class="icon-response-s-22-a"></a><span class="response-text">2K</span></span>
+											<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="boxed post-div" id="post-4">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+									<div class="post-acc-pic">
+										<a href="#"><img alt="" title="" src="img/your mummy.jpg"></a>
+									</div>
+									<div class="post-content">
+										<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+										<div class="post-title"><a class="slink mt" href="#">Olayemi Johnson</a> reviewed <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+										<div class="post-content-main">
+										<span class="ratings-large pcr"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text hm5">12/09/99</span></span>
+										<div class="post-text">
+											<div class="post-text-inner">
+											I loves Paris Baguette! All the types of savory and sweet pastry beds that i long for. Some people think some of them were hard and cold.. well.. if its been sitting for even 15 minutes.. thats likely. Why not ask them to heat it up for you for 3-6 seconds. Just like a krispy creme donut.
+											</div>
+										</div>
+										<div class="icon-response-s-22s">
+										<span class="post-response response-like"><a href="#" class="icon-response-s-22"></a><span class="response-text">999.9K</span></span>
+										<span class="post-response response-funny"><a href="#" class="icon-response-s-22"></a><span class="response-text">100</span></span>
+										<span class="post-response response-comment"><a href="#" class="icon-response-s-22"></a><span class="response-text">2</span></span>
+										<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+										<div class="comment-div" id="comment-4">
+										<hr/>
+										<form action="">
+										<div class="comment-form-group">
+										<div class="comment-text-hold">
+										<textarea placeholder="Comment here..."></textarea>
+										</div>
+										<button class="reply-button" type="submit" value=""><span class="icon-button-inner-s-24"></span></button>
+										</div>
+										</form>
+										<div class="comment-hold">
+											<div class="comment-pic">
+												<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+											</div>
+											<div class="comment-text">
+												<span class="comment-date">12/09/99</span>
+												<div class="comment-title"><a class="slink mt" href="#">Adekunle Gold</a></div>
+												<div class="comment-text-inner">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+												</div>
+											</div>
+										</div>
+										<div class="comment-hold">
+											<div class="comment-pic">
+												<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+											</div>
+											<div class="comment-text">
+												<span class="comment-date">12/09/99</span>
+												<div class="comment-title"><a class="slink mt" href="#">Adekunle Gold</a></div>
+												<div class="comment-text-inner">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="boxed post-div" id="post-7">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+									<div class="post-acc-pic">
+										<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+									</div>
+									<div class="post-content">
+										<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+										<div class="post-title"><a class="slink mt" href="#">Ubong Joseph</a> checked in at <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+										<div class="post-content-main">
+										<span class="checkin-large pcr"><span class="checkin-large-icon icon-location-f-s-19"></span><span class="checkin-large-text">Ikeja, Lagos, Nigeria.</span></span>
+										<div class="post-img">
+											<div class="post-two-img">
+												<a class="two-img" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/random pic.jpg" id=""/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+															asd
+														</div>
+													</div>
+												</a>
+												<a class="two-img" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/random pic2.jpg" id=""/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="icon-response-s-22s">
+										<span class="post-response response-like"><a href="#" class="icon-response-s-22"></a><span class="response-text">999.9K</span></span>
+										<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="boxed post-div" id="post-8">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+									<div class="post-acc-pic">
+										<a href="#"><img alt="" title="" src="img/your mummy.jpg"></a>
+									</div>
+									<div class="post-content">
+										<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+										<div class="post-title"><a class="slink mt" href="#">Salawa Abeni</a> checked in at <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+										<div class="post-content-main">
+										<span class="checkin-large pcr"><span class="checkin-large-icon icon-location-f-s-19"></span><span class="checkin-large-text">Ikeja, Lagos, Nigeria.</span></span>
+										<div class="post-img">
+											<div class="post-four-img">
+												<a class="four-img" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/test.jpg" id=""/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+														</div>
+													</div>
+												</a>
+												<a class="four-img" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/random pic.jpg" id=""/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+														</div>
+													</div>
+												</a>
+												<a class="four-img" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/random pic2.jpg" id=""/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+														</div>
+													</div>
+												</a>
+												<a class="four-img" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/random pic2.jpg" id=""/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="icon-response-s-22s">
+										<span class="post-response response-like"><a href="#" class="icon-response-s-22"></a><span class="response-text">999.9K</span></span>
+										<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="col-50 divhold">
+						<section class="boxed post-div" id="post-2">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+									<div class="post-acc-pic">
+										<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+									</div>
+									<div class="post-content">
+										<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+										<div class="post-title"><a class="slink mt" href="#">Adekunle Gold</a> reviewed <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+										<div class="post-content-main">
+										<span class="ratings-large pcr"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text hm5">12/09/99</span></span>
+										<div class="post-text">
+											<div class="post-text-inner">
+											I loves Paris Baguette! All the types of savory and sweet pastry beds that i long for. Some people think some of them were hard and cold.. well.. if its been sitting for even 15 minutes.. thats likely. Why not ask them to heat it up for you for 3-6 seconds. Just like a krispy creme donut.
+											</div>
+										</div>
+										<div class="icon-response-s-22s">
+										<span class="post-response response-like"><a href="#"  class="icon-response-s-22-a"></a><span class="response-text">999.9K</span></span>
+										<span class="post-response response-funny"><a href="#" class="icon-response-s-22"></a><span class="response-text">2K</span></span>
+										<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="boxed post-div" id="post-3">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+									<div class="post-acc-pic">
+										<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+									</div>
+									<div class="post-content">
+										<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+										<div class="post-title"><a class="slink mt" href="#">Adekunle Gold</a> reviewed <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+										<div class="post-content-main">
+										<span class="ratings-large pcr"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text hm5">12/09/99</span></span>
+										<div class="post-text">
+											<div class="post-text-inner">
+											I loves Paris Baguette! All the types of savory and sweet pastry beds that i long for. Some people think some of them were hard and cold.. well.. if its been sitting for even 15 minutes.. thats likely. Why not ask them to heat it up for you for 3-6 seconds. Just like a krispy creme donut.
+											</div>
+										</div>
+										<div class="icon-response-s-22s">
+										<span class="post-response response-like"><a href="#" class="icon-response-s-22"></a><span class="response-text">100</span></span>
+										<span class="post-response response-funny"><a href="#" class="icon-response-s-22-a"></a><span class="response-text">20</span></span>
+										<span class="post-response response-comment"><a href="#" class="icon-response-s-22"></a><span class="response-text">3</span></span>
+										<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+										<div class="comment-div" id="comment-3">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="boxed post-div" id="post-5">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+									<div class="post-acc-pic">
+										<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+									</div>
+									<div class="post-content">
+										<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+										<div class="post-title"><a class="slink mt" href="#">Jabar Shehu</a> checked in with <a class="slink mt" href="#">Green Designs</a></div>
+										<div class="post-content-main">
+										<span class="checkin-large pcr"><span class="checkin-large-icon icon-location-f-s-19"></span><span class="checkin-large-text">Ikeja, Lagos, Nigeria.</span></span>
+										<div class="icon-response-s-22s">
+										<span class="post-response response-like"><a href="#"  class="icon-response-s-22-a"></a><span class="response-text">999.9K</span></span>
+										<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="boxed post-div" id="post-6">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+									<div class="post-acc-pic">
+										<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+									</div>
+									<div class="post-content">
+										<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+										<div class="post-title"><a class="slink mt" href="#">Emeka Ike</a> checked in at <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+										<div class="post-content-main">
+										<span class="checkin-large pcr"><span class="checkin-large-icon icon-location-f-s-19"></span><span class="checkin-large-text">Ikeja, Lagos, Nigeria.</span></span>
+										<div class="post-img">
+											<a class="post-one-img" href="#">
+												<div class="post-one-img-hold">
+													<img src="img/random pic.jpg" id=""/>
+													<div class="img-caption">Well, I had the time of my life bruh.</div>
+												</div>
+											</a>
+										</div>
+										<div class="icon-response-s-22s">
+										<span class="post-response response-like"><a href="#" class="icon-response-s-22"></a><span class="response-text">999.9K</span></span>
+										<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="boxed post-div" id="post-9">
+							<!-- <div class="section-inner  deal-inner noimage"> -->
+							<div class="post-inner">
+									<div class="post-acc-pic">
+										<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+									</div>
+									<div class="post-content">
+										<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+										<div class="post-title"><a class="slink mt" href="#">Fresh Prince</a> checked in at <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+										<div class="post-content-main">
+										<span class="checkin-large pcr"><span class="checkin-large-icon icon-location-f-s-19"></span><span class="checkin-large-text">Ikeja, Lagos, Nigeria.</span></span>
+										<div class="post-img">
+											<div class="post-three-img">
+												<a class="three-img-main" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/random pic.jpg" id="" alt="Well, I had the time of my life bruh."/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+														</div>
+													</div>
+												</a>
+												<a class="three-img-thumb" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/random pic2.jpg" id=""/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+														</div>
+													</div>
+												</a>
+												<a class="three-img-thumb" href="#">
+													<div class="post-img-hold">
+														<div class="post-img-inner">
+															<img src="img/random pic2.jpg" id=""/>
+															<div class="img-caption">Well, I had the time of my life bruh.</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="icon-response-s-22s">
+										<span class="post-response response-like"><a href="#" class="icon-response-s-22"></a><span class="response-text">999.9K</span></span>
+										<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		<br/><br/><br/>
+		<a href="#" class="write-button"><span class="write-button-icon icon-pencil-w-s-38"></span></a>
+	</div>
+	<!-- Modal Start -->
+	<div id="myModal" class="modal modal-gallery fade in">
+		<a class="close-gallery-modal">&times;</a>
+		<a class="modal-gallery-next">&gt;</a>
+		<a class="modal-gallery-prev">&lt;</a>
+		<!-- Modal content -->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-c-content m-2-c">
+					<div class="modal-c-div1">
+						<div class="gallery-img">
+							<img src="img/random pic.jpg" id="">
+						</div>
+					</div>
+					<div class="modal-c-div2">
+						<div class="media-next-prev-mobile">
+							<a class="modal-gallery-next">&gt;</a>
+							<a class="modal-gallery-prev">&lt;</a>
+						</div>
+						<div class="modal-c-div2-inner">
+							<div class="modal-c-div2-inner-hold">
+								<div class="post-inner">
+										<div class="post-acc-pic">
+											<a href="#"><img alt="" title="" src="img/your mummy.jpg"></a>
+										</div>
+										<div class="post-content">
+											<a href="#" title="Date/Time Here"><span class="post-date">12/09/99</span></a>
+											<div class="post-title"><a class="slink mt" href="#">Olayemi Johnson</a> reviewed <a class="slink mt" href="#">Sheraton Indian Restaurant</a></div>
+											<div class="post-content-main">
+											<span class="ratings-large pcr"><span class="ratings-large-icon icon-5-star-s-19"></span><span class="ratings-large-text hm5">12/09/99</span></span>
+											<div class="post-text">
+												<div class="post-text-inner">
+												I loves Paris Baguette! All the types of savory and sweet pastry beds that i long for. Some people think some of them were hard and cold.. well.. if its been sitting for even 15 minutes.. thats likely. Why not ask them to heat it up for you for 3-6 seconds. Just like a krispy creme donut.
+												</div>
+											</div>
+											<div class="icon-response-s-22s">
+											<span class="post-response response-like"><a href="#" class="icon-response-s-22"></a><span class="response-text">999.9K</span></span>
+											<span class="post-response response-funny"><a href="#" class="icon-response-s-22"></a><span class="response-text">100</span></span>
+											<span class="post-response response-comment"><a href="#" class="icon-response-s-22"></a><span class="response-text">2</span></span>
+											<a href="#" class="post-response response-more"><span class="icon-response-s-22"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment-div" id="comment-4">
+									<div class="comments-hold">
+										<div class="comment-hold">
+											<div class="comment-pic">
+												<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+											</div>
+											<div class="comment-text">
+												<span class="comment-date">12/09/99</span>
+												<div class="comment-title"><a class="slink mt" href="#">Adekunle Gold</a></div>
+												<div class="comment-text-inner">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+												</div>
+											</div>
+										</div>
+										<div class="comment-hold">
+											<div class="comment-pic">
+												<a href="#"><img alt="" title="" src="img/your daddy.jpg"></a>
+											</div>
+											<div class="comment-text">
+												<span class="comment-date">12/09/99</span>
+												<div class="comment-title"><a class="slink mt" href="#">Adekunle Gold</a></div>
+												<div class="comment-text-inner">
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="comment-form-hold">	
+							<div class="comment-form-hold-inner">	
+								<form action="">
+								<div class="comment-form-group">
+								<div class="comment-text-hold">
+								<textarea placeholder="Comment here..."></textarea>
+								</div>
+								<button class="reply-button" type="submit" value=""><span class="icon-button-inner-s-24"></span></button>
+								</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- After modal(s), Add backdrop -->
+	<div class="modal-backdrop fade in"></div>
+	<!-- Modal End -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/fontfaceobserver.js"></script>
+</body>
+</html>

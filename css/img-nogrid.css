@@ -1,0 +1,515 @@
+.tnav .logo a{
+	background-image: url('../img/iwj-imgmp.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 0px;
+}
+.icon-home-s-24{
+	background-image: url('../img/icons/home icon-s-24.png');
+}
+.icon-home-w-s-24{
+	background-image: url('../img/icons/home-w icon-s-24.png');
+}
+.icon-timeline-s-24{
+	background-image: url('../img/icons/timeline icon-s-24.png');
+}
+.icon-timeline-w-s-24{
+	background-image: url('../img/icons/timeline-w icon-s-24.png');
+}
+.icon-needs-s-24{
+	background-image: url('../img/icons/needs icon-s-24.png');
+}
+.icon-needs-w-s-24{
+	background-image: url('../img/icons/needs-w icon-s-24.png');
+}
+.icon-message-s-24{
+	background-image: url('../img/icons/message icon-s-24.png');
+}
+.icon-message-w-s-24{
+	background-image: url('../img/icons/message-w icon-s-24.png');
+}
+.icon-notification-s-24{
+	background-image: url('../img/icons/notification icon-s-24.png');
+}
+.icon-notification-w-s-24{
+	background-image: url('../img/icons/notification-w icon-s-24.png');
+}
+.icon-search-w-s-18{
+	background-image: url('../img/icons/search-w icon-s-18.png');
+}
+.icon-dropdown-th-w-s-22{
+	background-image: url('../img/icons/dropdown-th-w icon-s-22.png');
+}
+.icon-fbmatch-s-20{
+	background-image: url('../img/icons/fbmatch icon-s-20.png');
+}
+.icon-frecom-s-20{
+	background-image: url('../img/icons/frecom icon-s-20.png');
+}
+.icon-star-s-20{
+	background-image: url('../img/icons/star icon-s-20.png');
+}
+.icon-star-l-w-s-20{
+	background-image: url('../img/icons/star-l-w icon-s-20.png');
+}
+.icon-location-s-20{
+	background-image: url('../img/icons/location icon-s-20.png');
+}
+.icon-recommend-b-s-21{
+	background-image: url('../img/icons/recommend-b icon-s-21.png');
+}
+.icon-5-star-s-19{
+	background-image: url('../img/icons/5-star icon-s-19.png');
+}
+.icon-4-half-star-s-19{
+	background-image: url('../img/icons/4-half-star icon-s-19.png');
+}
+.icon-4-star-s-19{
+	background-image: url('../img/icons/4-star icon-s-19.png');
+}
+.icon-3-half-star-s-19{
+	background-image: url('../img/icons/3-half-star icon-s-19.png');
+}
+.icon-3-star-s-19{
+	background-image: url('../img/icons/3-star icon-s-19.png');
+}
+.icon-2-half-star-s-19{
+	background-image: url('../img/icons/2-half-star icon-s-19.png');
+}
+.icon-2-star-s-19{
+	background-image: url('../img/icons/2-star icon-s-19.png');
+}
+.icon-1-half-star-s-19{
+	background-image: url('../img/icons/1-half-star icon-s-19.png');
+}
+.icon-1-star-s-19{
+	background-image: url('../img/icons/1-star icon-s-19.png');
+}
+.icon-place-s-16{
+	background-image: url('../img/icons/place icon-s-16.png');
+}
+.icon-location-s-16{
+	background-image: url('../img/icons/location icon-s-16.png');
+}
+.icon-phone-s-16{
+	background-image: url('../img/icons/phone icon-s-16.png');
+}
+.follow-button .flw-icon-15{
+	background-image: url('../img/icons/plus-w icon-s-15.png');
+}
+.follow-button-a .flw-icon-15{
+	background-image: url('../img/icons/forward-w icon-s-15.png');
+}
+.follow-button-a:hover .flw-icon-15, .follow-button-a:focus .flw-icon-15, .follow-button-a:active .flw-icon-15{
+	background-image: url('../img/icons/cross-w icon-s-15.png');
+}
+.follow-button .flw-icon-12{
+	background-image: url('../img/icons/plus-w icon-s-12.png');
+}
+.follow-button-a .flw-icon-12{
+	background-image: url('../img/icons/forward-w icon-s-12.png');
+}
+.follow-button-a:hover .flw-icon-12, .follow-button-a:focus .flw-icon-12, .follow-button-a:active .flw-icon-12{
+	background-image: url('../img/icons/cross-w icon-s-12.png');
+}
+.icon-recommend-b-s-19{
+	background-image: url('../img/icons/recommend-b icon-s-19.png');
+}
+.icon-place-s-14{
+	background-image: url('../img/icons/place icon-s-14.png');
+}
+.icon-5-star-s-15{
+	background-image: url('../img/icons/5-star icon-s-15.png');
+}
+.icon-4-half-star-s-15{
+	background-image: url('../img/icons/4-half-star icon-s-15.png');
+}
+.icon-4-star-s-15{
+	background-image: url('../img/icons/4-star icon-s-15.png');
+}
+.icon-3-half-star-s-15{
+	background-image: url('../img/icons/3-half-star icon-s-15.png');
+}
+.icon-3-star-s-15{
+	background-image: url('../img/icons/3-star icon-s-15.png');
+}
+.icon-2-half-star-s-15{
+	background-image: url('../img/icons/2-half-star icon-s-15.png');
+}
+.icon-2-star-s-15{
+	background-image: url('../img/icons/2-star icon-s-15.png');
+}
+.icon-1-half-star-s-15{
+	background-image: url('../img/icons/1-half-star icon-s-15.png');
+}
+.icon-1-star-s-15{
+	background-image: url('../img/icons/1-star icon-s-15.png');
+}
+.icon-dropdown-t-s-20{
+	background-image: url('../img/icons/dropdown-t icon-s-20.png');
+}
+.response-like .icon-response-s-22{
+	background-image: url('../img/icons/like icon-s-22.png');
+}
+.response-reshare .icon-response-s-22{
+	background-image: url('../img/icons/reshare icon-s-22.png');
+}
+.response-funny .icon-response-s-22{
+	background-image: url('../img/icons/funny icon-s-22.png');
+}
+.response-comment .icon-response-s-22{
+	background-image: url('../img/icons/reply icon-s-22.png');
+}
+.response-rec .icon-response-s-22{
+	background-image: url('../img/icons/recommend icon-s-22.png');
+}
+.response-like .icon-response-s-22-a{
+	background-image: url('../img/icons/like-a icon-s-22.png');
+}
+.response-reshare .icon-response-s-22-a{
+	background-image: url('../img/icons/reshare-a icon-s-22.png');
+}
+.response-funny .icon-response-s-22-a{
+	background-image: url('../img/icons/funny-a icon-s-22.png');
+}
+.response-comment .icon-response-s-22-a{
+	background-image: url('../img/icons/reply-a icon-s-22.png');
+}
+.response-rec .icon-response-s-22-a{
+	background-image: url('../img/icons/recommend-b icon-s-22.png');
+}
+.response-more .icon-response-s-22{
+	background-image: url('../img/icons/more icon-s-22.png');
+}
+.comment-form-group .reply-button .icon-button-inner-s-24{
+	background-image: url('../img/icons/reply-l-w icon-s-24.png');
+}
+.comment-form-group .recommend-button .icon-button-inner-s-24{
+	background-image: url('../img/icons/recommend-w icon-s-24.png');
+}
+.icon-location-f-s-19{
+	background-image: url('../img/icons/location-f icon-s-19.png');
+}
+.icon-need-f-s-19{
+	background-image: url('../img/icons/need-f icon-s-19.png');
+}
+.icon-pencil-w-s-38{
+	background-image: url('../img/icons/pencil-w icon-s-38.png');
+}
+caret{
+	background-image: url('../img/icons/caret icon-s-20.png');
+}
+.open caret{
+	background-image:url('../img/caret icon-s-20.png');
+}
+.closed caret{
+	background-image:url('../img/caret-c icon-s-20.png');
+}
+.icon-list-w-s-20{
+	background-image: url('../img/icons/list-w icon-s-20.png');
+}
+.icon-search-s-24{
+	background-image: url('../img/icons/search icon-s-24.png');
+}
+.ticon.icon-needs-s-24{
+	background-image: url('../img/icons/needs icon-s-24.png');
+}
+.active .ticon.icon-needs-s-24{
+	background-image: url('../img/icons/needs-w icon-s-24.png');
+}
+.ticon.icon-place-s-24{
+	background-image: url('../img/icons/place icon-s-24.png');
+}
+.active .ticon.icon-place-s-24{
+	background-image: url('../img/icons/place-w icon-s-24.png');
+}
+.icon-cam-s-24{
+	background-image: url('../img/icons/cam icon-s-24.png');
+}
+.icon-settings-s-20{
+	background-image: url('../img/icons/settings icon-s-20.png');
+}
+.icon-newmesage-s-20{
+	background-image: url('../img/icons/newmessage icon-s-20.png');
+}
+.icon-caret-l-s-20{
+	background-image: url('../img/icons/caret-l icon-s-20.png');
+}
+.icon-flag-s-14{
+	background-image: url('../img/icons/flag icon-s-14.png');
+}
+.icon-delete-s-14{
+	background-image: url('../img/icons/delete icon-s-14.png');
+}
+.icon-attach-s-24{
+	background-image: url('../img/icons/attach icon-s-24.png');
+}
+.icon-notify-like-s-16, .icon-like-a-s-16{
+	background-image: url('../img/icons/like-a icon-s-16.png');
+}
+.icon-notify-reshare-s-16, .icon-reshare-a-s-16{
+	background-image: url('../img/icons/reshare-a icon-s-16.png');
+}
+.icon-notify-funny-s-16, .icon-funny-a-s-16{
+	background-image: url('../img/icons/funny-a icon-s-16.png');
+}
+.icon-notify-reply-s-16{
+	background-image: url('../img/icons/reply-a icon-s-16.png');
+}
+.icon-notify-need-s-16{
+	background-image: url('../img/icons/needs icon-s-16.png');
+}
+.icon-notify-recommend-s-16{
+	background-image: url('../img/icons/recommend-b icon-s-16.png');
+}
+.icon-notify-follow-s-16, .icon-follow-s-16{
+	background-image: url('../img/icons/forward icon-s-16.png');
+}
+.icon-notify-review-s-16{
+	background-image: url('../img/icons/star-r icon-s-16.png');
+}
+.icon-notify-edit-s-16{
+	background-image: url('../img/icons/edit icon-s-16.png');
+}
+.icon-message-l-w-s-25{
+	background-image: url('../img/icons/message-l-w icon-s-25.png');
+}
+.icon-location-w-s-25{
+	background-image: url('../img/icons/location-w icon-s-25.png');
+}
+.pfollow-button .flw-icon-20{
+	
+}
+.pfollow-button .flw-icon-20{
+	background-image: url('../img/icons/plus-w icon-s-20.png');
+}
+.pfollow-button-a .flw-icon-20{
+	background-image: url('../img/icons/forward-w icon-s-20.png');
+}
+.pfollow-button-a:hover .flw-icon-20, .pfollow-button-a:focus .flw-icon-20, .pfollow-button-a:active .flw-icon-20{
+	background-image: url('../img/icons/cross-w icon-s-20.png');
+}
+.profile-rec .profile-rec-icon{background-image: url('../img/icons/recommend icon-s-30.png');}
+.profile-rec-a .profile-rec-icon{background-image: url('../img/icons/recommend-b icon-s-30.png');}
+.icon-post-s-16{
+	background-image: url('../img/icons/post icon-s-16.png');
+}
+.icon-star-s-16{
+	background-image: url('../img/icons/star icon-s-16.png');
+}
+.icon-recommend-s-16{
+	background-image: url('../img/icons/recommend icon-s-16.png');
+}
+.icon-place-w-s-16{
+	background-image: url('../img/icons/place-w icon-s-16.png');
+}
+.icon-phone-w-s-16{
+	background-image: url('../img/icons/phone-w icon-s-16.png');
+}
+.icon-web-w-s-16{
+	background-image: url('../img/icons/web-w icon-s-16.png');
+}
+@media (max-width: 1200px){
+}
+@media (max-width: 992px){
+	.tnav .logo a{background-image: url('../img/logom.png');}
+	.icon-pencil-w-s-38{
+	background-image: url('../img/icons/pencil-w icon-s-35.png');
+	}
+	.icon-dropdown-th-w-s-22{
+	background-image: url('../img/icons/dropdown-th-w icon-s-16.png');
+	}
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 641px){
+	.icon-pencil-w-s-38{
+	background-image: url('../img/icons/pencil-w icon-s-28.png');
+	}
+}
+
+@media (max-width: 520px){
+	.homesearch .logo a{background-position:0 0 !important; background-size: auto !important; background-image: url(../img/iwj-imgmp.png); width:124px;}
+}
+
+@media (max-width: 454px){
+	.tnav .logo a{background-size:31px;}
+	.homesearch .logo a{background-position:0 0 !important; background-size: auto !important; background-image: url(../img/iwj-imgmp.png); }
+}
+
+@media (max-width: 360px){
+	.mes-search-gp-button-icon.icon-search-s-24{
+		background-image: url('../img/icons/search icon-s-18.png');
+	}
+	.icon-dropdown-th-w-s-22{
+		background-image: url('../img/icons/dropdown-th-w icon-s-12.png');
+	}
+	.icon-fbmatch-s-20{
+		background-image: url('../img/icons/fbmatch icon-s-14.png');
+	}
+	.icon-frecom-s-20{
+		background-image: url('../img/icons/frecom icon-s-14.png');
+	}
+	.icon-star-s-20{
+		background-image: url('../img/icons/star icon-s-14.png');
+	}
+	.icon-location-s-20{
+		background-image: url('../img/icons/location icon-s-14.png');
+	}
+	.icon-recommend-b-s-21{
+		background-image: url('../img/icons/recommend-b icon-s-16.png');
+	}
+	.icon-place-s-16{
+		background-image: url('../img/icons/place icon-s-14.png');
+	}
+	.icon-5-star-s-19{
+		background-image: url('../img/icons/5-star icon-s-15.png');
+	}
+	.icon-4-half-star-s-19{
+		background-image: url('../img/icons/4-half-star icon-s-15.png');
+	}
+	.icon-4-star-s-19{
+		background-image: url('../img/icons/4-star icon-s-15.png');
+	}
+	.icon-3-half-star-s-19{
+		background-image: url('../img/icons/3-half-star icon-s-15.png');
+	}
+	.icon-3-star-s-19{
+		background-image: url('../img/icons/3-star icon-s-15.png');
+	}
+	.icon-2-half-star-s-19{
+		background-image: url('../img/icons/2-half-star icon-s-15.png');
+	}
+	.icon-2-star-s-19{
+		background-image: url('../img/icons/2-star icon-s-15.png');
+	}
+	.icon-1-half-star-s-19{
+		background-image: url('../img/icons/1-half-star icon-s-15.png');
+	}
+	.icon-1-star-s-19{
+		background-image: url('../img/icons/2-star icon-s-15.png');
+	}
+	.icon-list-w-s-20{
+		background-image: url('../img/icons/list-w icon-s-18.png');
+	}
+	.follow-button .flw-icon-15{
+		background-image: url('../img/icons/plus-w icon-s-13.png');
+	}
+	.follow-button-a .flw-icon-15{
+		background-image: url('../img/icons/forward-w icon-s-13.png');
+	}
+	.follow-button-a:hover .flw-icon-15, .follow-button-a:focus .flw-icon-15, .follow-button-a:active .flw-icon-15{
+		background-image: url('../img/icons/cross-w icon-s-13.png');
+	}
+	.comment-form-group .reply-button .icon-button-inner-s-24{
+		background-image: url('../img/icons/reply-l-w icon-s-18.png');
+	}
+	.comment-form-group .recommend-button .icon-button-inner-s-24{
+		background-image: url('../img/icons/recommend-w icon-s-18.png');
+	}
+	.response-like .icon-response-s-22{
+		background-image: url('../img/icons/like icon-s-18.png');
+	}
+	.response-reshare .icon-response-s-22{
+		background-image: url('../img/icons/reshare icon-s-18.png');
+	}
+	.response-funny .icon-response-s-22{
+		background-image: url('../img/icons/funny icon-s-18.png');
+	}
+	.response-comment .icon-response-s-22{
+		background-image: url('../img/icons/reply icon-s-18.png');
+	}
+	.response-rec .icon-response-s-22{
+		background-image: url('../img/icons/recommend icon-s-18.png');
+	}
+	.response-like .icon-response-s-22-a{
+		background-image: url('../img/icons/like-a icon-s-18.png');
+	}
+	.response-reshare .icon-response-s-22-a{
+		background-image: url('../img/icons/reshare-a icon-s-18.png');
+	}
+	.response-funny .icon-response-s-22-a{
+		background-image: url('../img/icons/funny-a icon-s-18.png');
+	}
+	.response-comment .icon-response-s-22-a{
+		background-image: url('../img/icons/reply-a icon-s-18.png');
+	}
+	.response-rec .icon-response-s-22-a{
+		background-image: url('../img/icons/recommend-b icon-s-18.png');
+	}
+	.response-more .icon-response-s-22{
+		background-image: url('../img/icons/more icon-s-18.png');
+	}
+	.icon-location-f-s-19{
+		background-image: url('../img/icons/location-f icon-s-18.png');
+	}
+	.icon-need-f-s-19{
+		background-image: url('../img/icons/need-f icon-s-18.png');
+	}
+	.m-f-b.icon-cam-s-24{
+		background-image: url('../img/icons/cam icon-s-18.png');
+	}
+	.m-f-b.icon-attach-s-24{
+		background-image: url('../img/icons/attach icon-s-18.png');
+	}
+	.icon-message-l-w-s-25{
+		background-image: url('../img/icons/message-l-w icon-s-18.png');
+	}
+	.icon-location-w-s-25{
+		background-image: url('../img/icons/location-w icon-s-18.png');
+	}
+	.pfollow-button .flw-icon-20{
+		background-image: url('../img/icons/plus-w icon-s-16.png');
+	}
+	.pfollow-button-a .flw-icon-20{
+		background-image: url('../img/icons/forward-w icon-s-16.png');
+	}
+	.pfollow-button-a:hover .flw-icon-20, .pfollow-button-a:focus .flw-icon-20, .pfollow-button-a:active .flw-icon-20{
+		background-image: url('../img/icons/cross-w icon-s-16.png');
+	}
+	.icon-star-l-w-s-20{
+		background-image: url('../img/icons/star-l-w icon-s-18.png');
+	}
+	.profile-rec .profile-rec-icon{background-image: url('../img/icons/recommend icon-s-25.png');}
+	.profile-rec-a	.profile-rec-icon{background-image: url('../img/icons/recommend-b icon-s-25.png');}
+	.ph-icon-inner.icon-like-a-s-16{
+		background-image: url('../img/icons/like-a icon-s-14.png');
+	}
+	.ph-icon-inner.icon-funny-a-s-16{
+		background-image: url('../img/icons/funny-a icon-s-14.png');
+	}
+	.un-group-rec-icon.icon-recommend-b-s-19{
+		background-image: url('../img/icons/recommend-b icon-s-16.png');
+	}
+	.prl-icon .icon-place-w-s-16{
+		background-image: url('../img/icons/place-w icon-s-14.png');
+	}
+	.prl-icon .icon-phone-w-s-16{
+		background-image: url('../img/icons/phone-w icon-s-14.png');
+	}
+	.prl-icon .icon-web-w-s-16{
+		background-image: url('../img/icons/web-w icon-s-14.png');
+	}
+}
+@media (max-width: 280px){
+	.tnav .logo, .tnav .logo a{background-size: 22px 25px;}
+	.homesearch .logo a{background-position:0 0 !important; background-size: 105px !important; background-image: url(../img/iwj-imgmp.png); }
+	.icon-search-s-24{
+		background-image: url('../img/icons/search icon-s-18.png');
+	}
+	.ticon.icon-needs-s-24{
+		background-image: url('../img/icons/needs icon-s-20.png');
+	}
+	.active .ticon.icon-needs-s-24{
+		background-image: url('../img/icons/needs-w icon-s-20.png');
+	}
+	.ticon.icon-place-s-24{
+		background-image: url('../img/icons/place icon-s-20.png');
+	}
+	.active .ticon.icon-place-s-24{
+		background-image: url('../img/icons/place-w icon-s-20.png');
+	}
+}
